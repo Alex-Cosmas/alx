@@ -1,18 +1,25 @@
 <template>
   <div class="w-56 flex-none shadow-md bg-white">
     <div class="w-full px-8 my-5">
-      <h6 class="font-bold mb-4">Home</h6>
-      <ul>
-        <li class="mb-3">Dashboard</li>
-        <li class="mb-3">Task</li>
-        <li class="mb-3">Email</li>
-        <li class="mb-3">Chat</li>
-        <li class="mb-3">Deals</li>
+      <ul class="flex flex-col space-y-4">
+        <nuxt-link to="" class="">Dashboard</nuxt-link>
+        <nuxt-link to="" class="">Task</nuxt-link>
+        <nuxt-link to="" class="">Email</nuxt-link>
+        <nuxt-link to="/contact" class="">Contact</nuxt-link>
+        <nuxt-link to="" class="">Chat</nuxt-link>
+        <nuxt-link to="" class="">Deals</nuxt-link>
       </ul>
+    </div>
 
-      <ul class="font-bold my-6">
-        <li class="mb-3">Settings</li>
-      </ul>
+    <hr class="border-gray-500" />
+    <div class="w-full px-8 my-5 h-full">
+      <div class="flex flex-col justify-between">
+        <ul class="font-bold my-6 ">
+          <li class="mb-3">Settings</li>
+        </ul>
+
+        <p>Toogle Sidebar</p>
+      </div>
     </div>
   </div>
 </template>
