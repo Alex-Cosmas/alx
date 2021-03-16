@@ -67,26 +67,10 @@
           </div>
         </div>
       </div>
-      <div class="px-6 mb-10">
-        <div class="shadow-xl p-5">
-          <div class="flex justify-between">
-            <h5>Send benefit review by Sunday</h5>
-            <div>
-              <div class="bg-green-600 px-2 rounded text-white">
-                <p>Reminder</p>
-              </div>
-            </div>
-          </div>
-          <p class="flex">
-            Due date:
-            <span class="px-2">December 23, 2020</span>
-          </p>
-          <div class="flex items-center py-2">
-            <div class="w-10 h-10 rounded-full bg-gray-900"></div>
-            <p class="mx-4">George Fields</p>
-          </div>
-        </div>
-      </div>
+
+      <TaskList :tasks="tasks" />
+
+      <!--  -->
     </div>
 
     <!--  Second Half -->
@@ -101,3 +85,21 @@
     <!--  Second Half -->
   </div>
 </template>
+
+<script>
+import TaskList from "~/components/data/taskResults/taskList";
+//
+import data from "~/src/tasks.json";
+//
+
+export default {
+  components: {
+    TaskList
+  },
+  data() {
+    return {
+      tasks: data.tasks
+    };
+  }
+};
+</script>

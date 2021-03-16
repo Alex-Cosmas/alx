@@ -1,8 +1,11 @@
 <template>
   <div>
     <!--  -->
-    <div>
+    <div class="flex items-center justify-between my-8">
       <p>Company: <span>All</span></p>
+      <button class="bg-blue-500 text-white rounded-md shadow-sm px-8 py-2">
+        Add contact
+      </button>
     </div>
     <!--  -->
     <div class="flex flex-col">
@@ -71,13 +74,12 @@
         </div>
       </div>
     </div>
-
     <!--  -->
   </div>
 </template>
 
 <script>
-import Contact from "~/components/data/Contact";
+import Contact from "~/components/data/contactResults/Contact";
 export default {
   props: {
     contacts: {

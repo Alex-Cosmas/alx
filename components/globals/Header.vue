@@ -3,7 +3,9 @@
   <div class="bg-white flex items-center">
     <div class="w-56 flex-none">
       <div class="py-5 shadow-md">
-        <h6 class="shadow-2xl font-bold px-8">Saas Kit</h6>
+        <nuxt-link to="/">
+          <h6 class="shadow-2xl font-bold px-8">Saas Kit</h6>
+        </nuxt-link>
       </div>
     </div>
 

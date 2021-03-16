@@ -25,6 +25,7 @@
 import Header from "~/components/globals/Header";
 import SideBar from "~/components/globals/SideBar";
 import MainComponent from "~/components/globals/MainComponent";
+
 export default {
   components: {
     Header,
