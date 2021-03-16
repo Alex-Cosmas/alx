@@ -13,7 +13,8 @@
         <!-- Main Component -->
         <div class="w-full m-5">
           <!-- Contact Component -->
-          <Contacts />
+          <ContactList :contacts="contacts" />
+
           <!-- End of Contact Component -->
         </div>
         <!--  -->
@@ -26,13 +27,24 @@
 <script>
 import Header from "~/components/globals/Header";
 import SideBar from "~/components/globals/SideBar";
-import Contacts from "~/components/data/Contacts";
+// import Contacts from "~/components/data/Contacts";
+import Contact from "~/components/data/Contact";
+import ContactList from "~/components/data/ContactList";
+
+import data from "~/src/contacts.json";
 
 export default {
   components: {
     Header,
     SideBar,
-    Contacts
+    // Contacts,
+    Contact,
+    ContactList
+  },
+  data() {
+    return {
+      contacts: data.contacts
+    };
   }
 };
 </script>

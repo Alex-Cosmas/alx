@@ -1,0 +1,31 @@
+{
+  "contacts": [
+    {
+      "name": "Lindsey Stroud",
+      "avatar": "https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=788&q=80",
+      "email": "lindsey.stroud@gmail.com",
+      "company": "Hatchbuck",
+      "role": "Manager",
+      "forecast": "50 %",
+      "activity": "5 Minutes ago"
+    },
+    {
+      "name": "Nicci Troiani",
+      "avatar": "https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=788&q=80",
+      "email": "nicci.troiani@gmail.com",
+      "company": "Slack",
+      "role": "Manager",
+      "forecast": "75 %",
+      "activity": "14 Minutes ago"
+    },
+    {
+      "name": "George Fields",
+      "avatar": "https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=788&q=80",
+      "email": "george.fields@gmail.com",
+      "company": "Clockify",
+      "role": "CEO",
+      "forecast": "10 %",
+      "activity": "6 Hours ago"
+    }
+  ]
+}
