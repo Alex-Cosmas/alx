@@ -42,9 +42,9 @@
       </svg>
     </div>
     <div>
-      <div class="flex m-5">
+      <div class="flex flex-col sm:flex sm:flex-row m-5 min-h-screen">
         <!--  Fist  Half -->
-        <div class="bg-white rounded-lg shadow-sm flex-grow h-screen">
+        <div class="bg-white rounded-lg shadow-sm flex-grow h-auto">
           <div class="p-6 ">
             <div class="mb-3 flex justify-between">
               <p>8 tasks completed out of 10</p>
@@ -129,7 +129,9 @@
         </div>
 
         <!--  Second Half -->
-        <div class="w-1/2 flex flex-col justify-between ml-8">
+        <div
+          class="sm:w-1/2 flex flex-col justify-between sm:ml-8 my-10 sm:my-0"
+        >
           <div class="h-full bg-white rounded p-3 mb-3">
             Deals
           </div>
