@@ -10,7 +10,7 @@
     </div>
 
     <div class="flex-grow flex justify-between pr-12">
-      <div class="px-6 flex items-center">
+      <div class="px-6 flex items-center w-full">
         <svg
           class="w-5 h-5 text-accent-icongray"
           xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@
           placeholder="Global Search"
           name=""
           id=""
-          class=" text-sm pl-3"
+          class="w-full text-sm pl-3"
         />
       </div>
       <svg

@@ -1,8 +1,13 @@
 <template>
-  <div class="w-1/5 flex-none shadow-md bg-white">
+  <div class="flex-none shadow-md bg-white h-full">
+    <div class="h-16 py-5 shadow-md">
+      <nuxt-link to="/">
+        <h6 class="shadow-2xl font-bold px-8 text-main-blue">Saas Kit</h6>
+      </nuxt-link>
+    </div>
     <div class="w-full px-8 my-5">
       <!-- Avatar -->
-      <div class="mb-8 flex text-sm items-center font-semibold space-x-3">
+      <div class="mb-8 mt-10 flex text-sm items-center font-semibold space-x-3">
         <img
           src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=788&q=80"
           alt=""
@@ -16,7 +21,7 @@
         </div>
       </div>
 
-      <ul class="flex flex-col space-y-4">
+      <ul class="flex flex-col space-y-4 text-accent-darkblue">
         <nuxt-link to="/" class="flex ">
           <div class="mr-2 text-main-blue">
             <svg
@@ -135,13 +140,13 @@
     </div>
 
     <hr class="border-gray-500" />
-    <div class="w-full px-8 my-5 h-full">
+    <div class="px-8 my-5 text-accent-darkblue">
       <div class="flex flex-col justify-between">
         <ul class="font-bold my-6 ">
           <li class="mb-3">Settings</li>
         </ul>
 
-        <p>Toogle Sidebar</p>
+        <!-- <div>Toogle Sidebar</div> -->
       </div>
     </div>
   </div>

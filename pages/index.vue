@@ -1,22 +1,14 @@
 <template>
   <div>
-    <div class="flex flex-col min-h-screen">
-      <!-- Header Component -->
-      <Header />
-      <!--  -->
-
-      <!-- Side bar + main body -->
-      <div class="flex flex-1 ">
-        <!-- SideBar Component -->
-        <SideBar />
-
-        <!-- Main Component -->
-        <div class="w-full m-5">
-          <!-- Main Components -->
+    <div>
+      <div class="flex flex-col sm:flex-row min-h-screen overflow-x-hidden">
+        <div class=" bg-secondary-tableblack text-white sm:w-1/5">
+          <SideBar />
+        </div>
+        <div class=" w-full block">
           <MainComponent />
         </div>
       </div>
-      <!-- End of side bar + main body -->
     </div>
   </div>
 </template>
