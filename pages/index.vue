@@ -2,7 +2,7 @@
   <div>
     <div>
       <div class="flex flex-col sm:flex-row min-h-screen overflow-x-hidden">
-        <div class=" bg-secondary-tableblack text-white sm:w-1/5">
+        <div class=" bg-secondary-tableblack text-white sm:w-1/4">
           <SideBar />
         </div>
         <div class=" w-full block">

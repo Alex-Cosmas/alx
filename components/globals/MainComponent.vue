@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Start of Search Component -->
     <div
       class="bg-white flex-grow flex justify-between pr-12 py-5 shadow-md h-16"
     >
@@ -41,6 +42,8 @@
         />
       </svg>
     </div>
+
+    <!-- End of Search Component -->
     <div>
       <div class="flex flex-col sm:flex sm:flex-row m-5 min-h-screen">
         <!--  Fist  Half -->
@@ -56,7 +59,7 @@
               </div>
             </div>
             <div class="bg-gray-200 p-1">
-              <div class="bg-green-400 w-5/6 p-1"></div>
+              <div class=" bg-main-green w-5/6 p-1"></div>
             </div>
           </div>
           <div class="px-6 mb-10 font-semibold">
