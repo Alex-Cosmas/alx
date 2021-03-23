@@ -50,17 +50,26 @@
           </div>
           <!-- End of Search Component -->
           <div class="m-5">
-            <!--  -->
-            <div class="flex items-center justify-between my-8">
-              <p>Status: <span>All</span></p>
-              <!-- <button
-              class="bg-blue-500 text-white rounded-md shadow-sm px-8 py-2"
+            <!-- Top Bar -->
+            <div
+              class="flex items-center justify-between my-8"
+              @toggle-add-task="toggleAddTask"
             >
-              Add contact
-            </button> -->
-              <Button text="Add Tasks" />
+              <p>Status: <span>All</span></p>
+
+              <Button
+                @toggle-add-task="$emit('toggle-add')"
+                text="Add Tasks"
+                class=" bg-main-blue"
+              />
             </div>
-            <AddTask @add-task="addTask" />
+
+            <!-- Add Task Component -->
+            <div v-show="showAddTask">
+              <AddTask @add-task="addTask" />
+            </div>
+            <!-- End -->
+
             <MyTasks @delete-task="deleteTask" :tasks="tasks" />
 
             <!--  -->
@@ -72,11 +81,11 @@
   </div>
 </template>
 <script>
-import SideBar from "~/components/globals/SideBar";
-import Button from "~/components/elements/Button";
-import MyTasks from "~/components/Tasks";
+import SideBar from '~/components/globals/SideBar';
+import Button from '~/components/elements/Button';
+import MyTasks from '~/components/Tasks';
 
-import AddTask from "~/components/AddTask";
+import AddTask from '~/components/AddTask';
 export default {
   components: {
     SideBar,
@@ -86,10 +95,14 @@ export default {
   },
   data() {
     return {
-      tasks: []
+      tasks: [],
+      showAddTask: false
     };
   },
   methods: {
+    toggleAddTask() {
+      this.showAddTask = !this.showAddTask;
+    },
     addTask(task) {
       this.tasks = [...this.tasks, task];
     },
@@ -104,30 +117,30 @@ export default {
     this.tasks = [
       {
         id: 1,
-        description: "Send benefit review by Sunday",
-        date: "December 23, 2020",
-        status: "Reminder",
-        assigned: "George Fields",
+        description: 'Send benefit review by Sunday',
+        date: 'December 23, 2020',
+        status: 'Reminder',
+        assigned: 'George Fields',
         avatar:
-          "https://thumbnailer.mixcloud.com/unsafe/42x42/defaults/users/1.png"
+          'https://thumbnailer.mixcloud.com/unsafe/42x42/defaults/users/1.png'
       },
       {
         id: 2,
-        description: "Invite to office meet-up",
-        date: "December 23, 2020",
-        status: "Ended",
-        assigned: "Lindsey Stroud",
+        description: 'Invite to office meet-up',
+        date: 'December 23, 2020',
+        status: 'Ended',
+        assigned: 'Lindsey Stroud',
         avatar:
-          "https://thumbnailer.mixcloud.com/unsafe/42x42/defaults/users/1.png"
+          'https://thumbnailer.mixcloud.com/unsafe/42x42/defaults/users/1.png'
       },
       {
         id: 3,
-        description: "Office meet-up",
-        date: "December 23, 2020",
-        status: "Completed",
-        assigned: "Nicci Troiani",
+        description: 'Office meet-up',
+        date: 'December 23, 2020',
+        status: 'Completed',
+        assigned: 'Nicci Troiani',
         avatar:
-          "https://thumbnailer.mixcloud.com/unsafe/42x42/defaults/users/1.png"
+          'https://thumbnailer.mixcloud.com/unsafe/42x42/defaults/users/1.png'
       }
     ];
   }

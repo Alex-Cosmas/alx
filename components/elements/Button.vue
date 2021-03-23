@@ -1,7 +1,7 @@
 <template>
   <button
     @click="onClick()"
-    class="btn text-white text-white rounded-md shadow-sm px-8 py-2 bg-main-blue"
+    class="btn text-white text-white rounded-md shadow-sm px-8 py-2"
   >
     {{ text }}
   </button>
@@ -9,16 +9,15 @@
 
 <script>
 export default {
-  name: "Button",
+  name: 'Button',
   props: {
     text: String
   },
   methods: {
     onClick() {
-      console.log("clicked");
+      // console.log('clicked');
+      this.$emit('toggle-add');
     }
   }
 };
-
-// :style="{ background: color }"
 </script>

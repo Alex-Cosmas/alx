@@ -31,8 +31,6 @@
 </template>
 
 <script>
-// import Contact from "~/components/data/contactResults/Contact";
-// import ContactList from "~/components/data/contactResults/ContactList";
 export default {
   props: {
     task: {

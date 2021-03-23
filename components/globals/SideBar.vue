@@ -142,8 +142,26 @@
     <hr class="border-gray-500" />
     <div class="px-8 my-5 text-accent-darkblue">
       <div class="flex flex-col justify-between">
-        <ul class="font-bold my-6 ">
-          <li class="mb-3">Settings</li>
+        <ul class="flex flex-col space-y-4 text-accent-darkblue">
+          <nuxt-link to="" class="flex">
+            <div class=" mr-2 text-main-blue">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                />
+              </svg>
+            </div>
+            Settings</nuxt-link
+          >
         </ul>
 
         <!-- <div>Toogle Sidebar</div> -->

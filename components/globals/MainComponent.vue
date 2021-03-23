@@ -62,7 +62,7 @@
               <div class=" bg-main-green w-5/6 p-1"></div>
             </div>
           </div>
-          <div class="px-6 mb-10 font-semibold">
+          <div class="px-6 mb-4 font-semibold">
             23 December, Sunday
           </div>
           <div class="px-6 mb-10">
@@ -135,7 +135,7 @@
         <div
           class="sm:w-1/2 flex flex-col justify-between sm:ml-8 my-10 sm:my-0"
         >
-          <div class="h-full bg-white rounded p-3 mb-3">
+          <div class="h-full bg-white rounded px-6 py-3 mb-3">
             <div class="mt-3">
               <div class="flex justify-between">
                 Deals:
@@ -144,8 +144,20 @@
             </div>
             <LineChart />
           </div>
-          <div class="h-full  bg-white rounded p-3">
+          <div class="h-full  bg-white rounded px-6 py-6">
             Tasks
+
+            <div class="h-full justify-center flex items-center">
+              <div
+                class="flex items-center justify-center w-52 h-52 rounded-full bg-main-green shadow-2xl"
+              >
+                <div
+                  class="flex items-center justify-center w-48 h-48 rounded-full bg-white"
+                >
+                  <p class="text-4xl text-main-green">{{ percent }}%</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!--  Second Half -->
@@ -170,7 +182,8 @@ export default {
   },
   data() {
     return {
-      tasks: data.tasks
+      tasks: data.tasks,
+      percent: 60
     };
   }
 };
