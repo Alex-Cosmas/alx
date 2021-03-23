@@ -136,7 +136,13 @@
           class="sm:w-1/2 flex flex-col justify-between sm:ml-8 my-10 sm:my-0"
         >
           <div class="h-full bg-white rounded p-3 mb-3">
-            Deals
+            <div class="mt-3">
+              <div class="flex justify-between">
+                Deals:
+                <p>Show: <span class=" pl-2 text-blue-500">Monthly</span></p>
+              </div>
+            </div>
+            <LineChart />
           </div>
           <div class="h-full  bg-white rounded p-3">
             Tasks
@@ -149,14 +155,18 @@
 </template>
 
 <script>
-import TaskList from "~/components/data/taskResults/taskList";
+import TaskList from '~/components/data/taskResults/taskList';
+
 //
-import data from "~/src/tasks.json";
+import LineChart from '~/components/LineChart.vue';
+//
+import data from '~/src/tasks.json';
 //
 
 export default {
   components: {
-    TaskList
+    TaskList,
+    LineChart
   },
   data() {
     return {

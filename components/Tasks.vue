@@ -52,8 +52,9 @@
               </thead>
 
               <Task
-                v-for="(task, index) in tasks"
+                v-for="task in tasks"
                 :key="task.id"
+                v-on:delete-task="$emit('delete-task', task.id)"
                 :task="task"
               />
 
@@ -68,11 +69,15 @@
 </template>
 
 <script>
-import TaskComponent from "~/components/Task";
+import Task from "~/components/Task";
 export default {
   name: "Tasks",
   props: {
     tasks: Array
-  }
+  },
+  components: {
+    Task
+  },
+  emits: ["delete-task"]
 };
 </script>
