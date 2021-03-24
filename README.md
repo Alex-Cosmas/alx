@@ -1,7 +1,5 @@
 # assignment
 
-**Context**
-
 ## Build Setup
 ```bash
 # install dependencies
